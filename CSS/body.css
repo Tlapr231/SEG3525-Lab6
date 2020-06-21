@@ -1,0 +1,19 @@
+body {
+    margin: 8px 8%;
+    background-image: url("../Images/Background.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: verdana;
+}
+
+div.center {
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #f07622;
+}

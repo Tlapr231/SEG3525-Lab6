@@ -1,0 +1,27 @@
+/* Gallery from w3School but was edited to fit my needs */
+div.gallery {
+    float: left;
+    width: 30%;
+    margin: 0.5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: white;
+  }
+    
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

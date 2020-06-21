@@ -1,0 +1,208 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Questionnaire sur BrightSpace</title>
+    <link rel="shortcut icon" type="image/png" href="Images/BrightspaceLogoBrowser.png">
+
+    <link rel="stylesheet" href="CSS/body.css">
+    <link rel="stylesheet" href="CSS/image.css">
+    <link rel="stylesheet" href="CSS/questions.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+
+
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="title">Questionnaire sur l'interface usager de uOttawa BrightSpace</h1>
+
+        <p>Merci de faire partie de ce sondage. Vous pouvez accéder le site de uOttawa BrighSpace en cliquant <a
+                href="https://uottawa.brightspace.com/">ici</a> ou sur le logo suivant.</p>
+    </div>
+
+    <div class="center">
+        <a href="https://uottawa.brightspace.com/">
+            <img class="d2l" src="Images/BrightspaceLogo.png" alt="404 File Not Found">
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="gallery">
+            <a href="https://uottawa.brightspace.com/">
+                <img src="Images/WebsitePicture1.png" alt="Page d'accueille">
+            </a>
+            <div class="desc">La page d'accueil</div>
+        </div>
+
+
+        <div class="gallery">
+            <a href="https://uottawa.brightspace.com/">
+                <img src="Images/WebsitePicture2.png" alt="Exemple de cours">
+            </a>
+            <div class="desc">Une Page d'un cours</div>
+        </div>
+
+        <div class="gallery">
+            <a href="https://uottawa.brightspace.com/">
+                <img src="Images/WebsitePicture3.png" alt="Exemple de qqchose"> 
+            </a>
+            <div class="desc">Exemple de la page Login</div>
+        </div>
+    </div>
+
+    <form id="questionnaire">
+
+        <div class="question">
+            <label for="q1" class="title">Question 1 - Donner un adjectif pour décrire l'interface usager de
+                BrightSpace.</label>
+            <input class="text" id="q1"></input>
+        </div>
+
+        <div class="question">
+            <p>Question 2 - Environ combien de fois utilisez-vous BrightSpace par semaine?</p>
+
+            <ul>
+                <li>
+                    <input type="radio" id="q2o1" name="question2" value="1-5 fois">
+                    <label for="q2o1">1-5 fois</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="q2o2" name="question2" value="6-10 fois">
+                    <label for="q2o2">6-10 fois</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="q2o3" name="question2" value="11-15 fois">
+                    <label for="q2o3">11-15 fois</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="q2o4" name="question2" value="16-20 fois">
+                    <label for="q2o4">16-20 fois</label>
+                </li>
+                <li>
+                    <input type="radio" id="q2o5" name="question2" value="20+ fois">
+                    <label for="q2o5">20+ fois</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>Question 3 - Environ combien de click devez-vous faire pour atteindre la partie du site voulue?</p>
+
+            <ul>
+                <li>
+                    <input type="radio" id="q3o1" name="question3">
+                    <label for="q3o1">1-2 click</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="q3o2" name="question3">
+                    <label for="q3o2">3-4 click</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="q3o3" name="question3">
+                    <label for="q3o3">5-6 click</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="q3o4" name="question3">
+                    <label for="q3o4">7+ click</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <!-- initial code from https://codepen.io/Buttonpresser/pen/qiuIx -->
+            <label class="statement">Question 4 - Les professeurs utilisent bien les fonctionalités de
+                BrightSpace?</label>
+            <ul class='likert'>
+                <li>
+                    <input id="q4o1" type="radio" name="question4" value="strongly agree">
+                    <label for="q4o1">Strongly agree</label>
+                </li>
+                <li>
+                    <input id="q4o2" type="radio" name="question4" value="agree">
+                    <label for="q4o2">Agree</label>
+                </li>
+                <li>
+                    <input id="q4o3" type="radio" name="question4" value="neutral">
+                    <label for="q4o3">Neutral</label>
+                </li>
+                <li>
+                    <input id="q4o4" type="radio" name="question4" value="disagree">
+                    <label for="q4o4">Disagree</label>
+                </li>
+                <li>
+                    <input id="q4o5" type="radio" name="question4" value="strong disagree">
+                    <label for="q4o5">Strongly disagree</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="question">
+
+            <p>Question 5 - Cocher toutes les fonctionalités que vous utilisez couramment.</p>
+
+            <ul>
+                <li>
+                    <input type="checkbox" id="q5o1" name="question5">
+                    <label for="q5o1">Annonces</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="q5o2" name="question5">
+                    <label for="q5o2">Progrès de la classe</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="q5o3" name="question5">
+                    <label for="q5o3">Calendrier</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="q5o4" name="question5">
+                    <label for="q5o4">Groupes</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="q5o5" name="question5">
+                    <label for="q5o5">Devoir</label>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="question">
+            <label for="q6" class="title">Question 6 - Pouvez-vous décrire, étape par étape, comment vous changez d'un
+                cours à l'autre?</label>
+            <textarea class="text" id="q6"></textarea>
+        </div>
+
+        <div class="question">
+            <label class="title" for="comments">Avez-vous d'autre commentaire au sujet de l'interface graphique de
+                BrightSpace ou à propos de ce questionnaire?</label>
+            <textarea class="text" id="comments"></textarea>
+        </div>
+
+    </form>
+
+    <button type="submit" form="questionnaire">Submit</button>
+
+    <br><br><br><br>
+
+    <div class="center footer">
+        <p class="sign">Site Web conçu par Thierry Laprade (#300067788)</p>
+        <p class="sign">Étudiant en Génie Logiciel</p>
+        <br>
+    </div>
+
+</body>
+
+</html>
