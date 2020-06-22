@@ -1,6 +1,5 @@
 // Une portion de se code a ete pris de: https://github.com/carolinebarriere/carolinebarriere.github.io/tree/master/SEG3125-Module6-SurveyAnalysis
-
-// jQuery that will "listen" to the html niceSurvey.html
+// jQuery that will "listen" to the html index.html
 $(document).ready(function(){
 
     $('form').on('submit', function(){
@@ -17,8 +16,8 @@ $(document).ready(function(){
             // Make the submit button red, disabled and saying Thank you
             $("#SubButton").css("background-color", "#eeaa7c");
             $("#SubButton").prop("disabled", "true");
-            $("#SubButton").text("Thank you!");
-            alert("Thank you for your time!");
+            $("#SubButton").text("Merci!");
+            alert("Soumis avec succès. Merci pour votre temps!");
           }
         });
         return false;

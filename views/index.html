@@ -13,6 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/CSS/body.css">
     <link rel="stylesheet" href="assets/CSS/questions.css">
@@ -129,24 +132,24 @@
                     BrightSpace.</label>
                 <ul class='likert'>
                     <li>
-                        <input id="q4o1" type="radio" name="q4" value="tout_daccord" required>
-                        <label for="q4o1">Tout à fait d'accord</label>
-                    </li>
-                    <li>
-                        <input id="q4o2" type="radio" name="q4" value="daccord">
-                        <label for="q4o2">D'accord</label>
-                    </li>
-                    <li>
-                        <input id="q4o3" type="radio" name="q4" value="neutre">
-                        <label for="q4o3">Indifférent</label>
+                        <input id="q4o5" type="radio" name="q4" value="pas_tout_daccord" required>
+                        <label for="q4o5">Pas du tout d'accord</label>
                     </li>
                     <li>
                         <input id="q4o4" type="radio" name="q4" value="pas_daccord">
                         <label for="q4o4">Pas d'accord</label>
                     </li>
                     <li>
-                        <input id="q4o5" type="radio" name="q4" value="pas_tout_daccord">
-                        <label for="q4o5">Pas du tout d'accord</label>
+                        <input id="q4o3" type="radio" name="q4" value="neutre">
+                        <label for="q4o3">Indifférent</label>
+                    </li>
+                    <li>
+                        <input id="q4o2" type="radio" name="q4" value="daccord">
+                        <label for="q4o2">D'accord</label>
+                    </li>
+                    <li>
+                        <input id="q4o1" type="radio" name="q4" value="tout_daccord">
+                        <label for="q4o1">Tout à fait d'accord</label>
                     </li>
                 </ul>
             </div>
@@ -199,7 +202,7 @@
 
         </form>
 
-        <button type="submit" form="questionnaire" id="SubButton">Submit</button>
+        <button type="submit" form="questionnaire" id="SubButton">Soumettre</button>
 
         <div class="text-center footer">
             <hr>
@@ -209,8 +212,8 @@
         </div>
 
         <!-- JS -->
-        <script src="assets/JS/script.js"></script>
-        <script src="assets/JS/actions.js"></script>
+        <script src="/assets/JS/script.js"></script>
+        <script src="/assets/JS/actions.js"></script>
     </div>
 </body>
 
