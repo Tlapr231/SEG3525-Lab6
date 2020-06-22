@@ -1,3 +1,5 @@
+// Une portion de se code a ete pris de: https://github.com/carolinebarriere/carolinebarriere.github.io/tree/master/SEG3125-Module6-SurveyAnalysis
+
 // jQuery that will "listen" to the html niceSurvey.html
 $(document).ready(function(){
 
