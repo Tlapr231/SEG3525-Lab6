@@ -8,14 +8,15 @@ $(document).ready(function(){
   
         $.ajax({
           type: 'POST',
-          url: '/niceSurvey',
+          url: '/survey',
           data: $(this).serializeArray(),
           success: function(data){
             // do something with the data via front-end framework
             // Make the submit button red, disabled and saying Thank you
-            $("#bb").css("background-color", "red");
-            $("#bb").prop("disabled", "true");
-            $("#bb").text("Thank you!");
+            $("#SubButton").css("background-color", "#eeaa7c");
+            $("#SubButton").prop("disabled", "true");
+            $("#SubButton").text("Thank you!");
+            alert("Thank you for your time!");
           }
         });
         return false;

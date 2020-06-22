@@ -42,29 +42,34 @@ module.exports = function(app){
     // when a user goes to localhost:3000/analysis
     // serve a template (ejs file) which will include the data from the data files
     app.get('/analysis', function(req, res){
-        var color = readData("color");
-        var fruit = readData("fruit");
-        var animal = readData("animal");
-        res.render('showResults', {results: [color, fruit, animal]});
-        console.log([color, fruit, animal]);
+        var question1 = readData("q1");
+        var question2 = readData("q2");
+        var question3 = readData("q3");
+        var question4 = readData("q4");
+        var question5 = readData("q5");
+        var question6 = readData("q6");
+        var comments = readData("comments");
+
+        res.render('showResults', {results: [question1, question2, question3, question4, question5, question6, comments]});
+        console.log([question1, question2, question3, question4, question5, question6, comments]);
     });
 
     // when a user goes to localhost:3000/niceSurvey
     // serve a static html (the survey itself to fill in)
-    app.get('/niceSurvey', function(req, res){
-        res.sendFile(__dirname+'/views/niceSurvey.html');
+    app.get('/survey', function(req, res){
+        res.sendFile(__dirname+'/views/index.html');
     });
 
     // when a user types SUBMIT in localhost:3000/niceSurvey 
     // the action.js code will POST, and what is sent in the POST
     // will be recuperated here, parsed and used to update the data files
-    app.post('/niceSurvey', urlencodedParser, function(req, res){
+    app.post('/survey', urlencodedParser, function(req, res){
         console.log(req.body);
         var json = req.body;
         for (var key in json){
             console.log(key + ": " + json[key]);
             // in the case of checkboxes, the user might check more than one
-            if ((key === "color") && (json[key].length === 2)){
+            if ((key === "q5") && (json[key].length >= 2)){
                 for (var item in json[key]){
                     combineCounts(key, json[key][item]);
                 }
